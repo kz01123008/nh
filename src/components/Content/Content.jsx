@@ -37,7 +37,7 @@ const Content = () => (
           <FormattedMessage id="rol" defaultMessage="Full-stack developer" />
         </p>
 
-        <div className="redes-sociales">
+        {/* <div className="redes-sociales">
           <a
             href="https://www.linkedin.com/in/esteban-nahuel-carrizo-69715422b/"
             target="_blank"
@@ -128,7 +128,7 @@ const Content = () => (
             </div>
             <span>Whatsapp</span>
           </a>
-        </div>
+        </div> */}
 
         <Link to="sobre-mi" href="#sobre-mi">
           <div className="scroll-down"></div>
