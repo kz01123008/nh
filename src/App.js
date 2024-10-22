@@ -25,7 +25,7 @@ function App() {
     }, 4000);
   }, []);
   return (
-    <BrowserRouter>
+    <>
       <RouterScrollTop />
       {loading ? (
         <div className="loading-pag">
@@ -47,7 +47,7 @@ function App() {
           <Route exact path="/project/3" element={<Project3 />} />
         </Routes>
       )}
-    </BrowserRouter>
+      </>
   );
 }
 
