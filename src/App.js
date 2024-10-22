@@ -14,6 +14,7 @@ import RouterScrollTop from "./components/ScrollToTop/RouterScrollTop";
 import Project1 from "./pages/Project/Project1";
 import Project2 from "./pages/Project/Project2";
 import Project3 from "./pages/Project/Project3";
+import { LangProvider } from "./context/Context";
 
 function App() {
   const [loading, setLoading] = useState(false);
@@ -25,7 +26,7 @@ function App() {
     }, 4000);
   }, []);
   return (
-    <>
+    <LangProvider>
       <RouterScrollTop />
       {loading ? (
         <div className="loading-pag">
@@ -47,7 +48,7 @@ function App() {
           <Route exact path="/project/3" element={<Project3 />} />
         </Routes>
       )}
-      </>
+      </LangProvider>
   );
 }
 
